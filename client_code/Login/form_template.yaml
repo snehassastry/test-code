@@ -30,34 +30,15 @@ components:
     name: pwd_entered
     properties: {background: 'theme:On Surface Variant', enabled: true, foreground: 'theme:Outline', italic: true, text: enter password, visible: true}
     type: TextBox
-  - layout_properties: {grid_position: 'GMARAC,MMNXXP LPKIRP,HKLICV XZWKIH,KBVQCM'}
+  - event_bindings: {click: outlined_button_1_click}
+    layout_properties: {grid_position: 'GMARAC,MMNXXP LPKIRP,HKLICV XZWKIH,KBVQCM'}
     name: outlined_button_1
     properties: {foreground: 'theme:On Secondary', role: outlined-button, text: Login}
     type: Button
   - layout_properties: {grid_position: 'GMARAC,MMNXXP LPKIRP,HKLICV YVMOFU,CMHIKY'}
     name: spacer_1
-    properties: {height: 32}
+    properties: {height: 159}
     type: Spacer
-  - layout_properties: {grid_position: 'GMARAC,MMNXXP LPKIRP,HKLICV WHLCFB,EKMBFH'}
-    name: text_box_1_copy
-    properties: {background: 'theme:On Background', enabled: false, font_size: 10, foreground: 'theme:Surface Variant', italic: true, text: 'Meet our team: '}
-    type: TextBox
-  - layout_properties: {grid_position: 'GMARAC,MMNXXP LPKIRP,HKLICV UKDDOX,ROKPEU'}
-    name: text_box_1_copy_copy
-    properties: {background: 'theme:On Background', enabled: false, font_size: 10, foreground: 'theme:Surface Variant', italic: true, text: Arantza Garcia Delfin}
-    type: TextBox
-  - layout_properties: {grid_position: 'GMARAC,MMNXXP LPKIRP,HKLICV UKDDOX,FXHNBY'}
-    name: text_box_1_copy_copy_copy_2
-    properties: {background: 'theme:On Background', enabled: false, font_size: 10, foreground: 'theme:Surface Variant', italic: true, text: Sneha Sastry Rayadurgam}
-    type: TextBox
-  - layout_properties: {grid_position: 'GMARAC,MMNXXP LPKIRP,HKLICV AERYVL,QTYZGI'}
-    name: text_box_1_copy_copy_copy
-    properties: {background: 'theme:On Background', enabled: false, font_size: 10, foreground: 'theme:Surface Variant', italic: true, text: ' Biagio Alessandrello  '}
-    type: TextBox
-  - layout_properties: {grid_position: 'GMARAC,MMNXXP LPKIRP,HKLICV AERYVL,JUJLIU'}
-    name: text_box_1_copy_copy_copy_2_copy
-    properties: {background: 'theme:On Background', enabled: false, font_size: 10, foreground: 'theme:Surface Variant', italic: true, text: 'Utkarsh '}
-    type: TextBox
   - layout_properties: {full_width_row: true, grid_position: 'GMARAC,MMNXXP LPKIRP,FEPTLG'}
     name: grid_panel_1
     properties: {}
@@ -65,24 +46,47 @@ components:
   - event_bindings: {state_change: youtube_video_1_state_change}
     layout_properties: {grid_position: 'GMARAC,AQIBXG'}
     name: youtube_video_1
-    properties: {height: 461.5, youtube_id: 'https://www.youtube.com/watch?v=2dBsUHplrFY&t=432s'}
+    properties: {height: 379, youtube_id: 'https://www.youtube.com/watch?v=2dBsUHplrFY&t=432s'}
     type: YouTubeVideo
-  - layout_properties: {grid_position: 'GMARAC,MMNXXP SXLHTZ,TQPRHQ'}
+  - layout_properties: {grid_position: 'JTTLEG,FNYDKM'}
     name: text_box_1
-    properties: {background: 'theme:On Background', enabled: false, font_size: 10, foreground: 'theme:Surface Variant', italic: true, text: 'This is a project done as a part of Optimization class at University of Texas at Austin '}
+    properties: {align: left, background: 'theme:On Background', enabled: false, font_size: 10, foreground: 'theme:Surface Variant', italic: true, text: 'This project done by a few Masters students  as a part of Optimization class at University of Texas at Austin . Click on the panel on left to learn more '}
     type: TextBox
   layout_properties: {slot: default}
   name: outlined_card_1
-  properties: {background: 'theme:On Background', col_spacing: none, col_widths: '{"HKLICV":20,"FEPTLG":14,"MMNXXP":35,"AQIBXG":25}', role: null, spacing_above: none, spacing_below: none}
+  properties:
+    background: theme:On Background
+    col_spacing: none
+    col_widths: '{"HKLICV":31,"FEPTLG":5,"MMNXXP":25,"AQIBXG":35}'
+    role: null
+    spacing:
+      margin: [null, null, 0, null]
+    spacing_above: none
+    spacing_below: none
+    visible: true
+    wrap_on: mobile
   type: ColumnPanel
-- layout_properties: {slot: title}
-  name: Main_head
-  properties: {background: 'theme:On Background', bold: true, enabled: false, font: times, font_size: 20, foreground: 'theme:Surface Variant', role: null, text: 'Connect 4 ', underline: false}
-  type: TextBox
-- layout_properties: {slot: left-nav}
-  name: column_panel_1
+- components:
+  - layout_properties: {grid_position: 'GNLHIR,CZOAIP'}
+    name: label_1
+    properties: {text: Blog Post}
+    type: Label
+  - layout_properties: {grid_position: 'QIXYQE,ZMQJHX'}
+    name: label_1_copy_copy
+    properties: {text: Play Connect4}
+    type: Label
+  - layout_properties: {grid_position: 'JABIPU,YSDMLF'}
+    name: label_1_copy
+    properties: {text: Contact us!}
+    type: Label
+  layout_properties: {slot: left-nav}
+  name: blog_container
   properties: {}
   type: ColumnPanel
+- layout_properties: {slot: title}
+  name: label_2
+  properties: {font_size: 30, text: 'CONNECT 4                                                                                                                                                        '}
+  type: Label
 container:
   properties: {background: 'theme:On Surface', foreground: 'theme:On Secondary Container', html: '@theme:standard-page.html', visible: true}
   type: HtmlTemplate
