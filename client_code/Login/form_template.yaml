@@ -41,8 +41,12 @@ components:
   - event_bindings: {state_change: youtube_video_1_state_change}
     layout_properties: {grid_position: 'LPKIRP,PDJQEC'}
     name: youtube_video_1
-    properties: {height: 280.5, youtube_id: 'https://www.youtube.com/watch?v=2dBsUHplrFY&t=432s'}
+    properties: {height: 356.5, youtube_id: 'https://www.youtube.com/watch?v=2dBsUHplrFY&t=432s'}
     type: YouTubeVideo
+  - layout_properties: {grid_position: 'EGNDPV,CUQENH'}
+    name: text_box_1
+    properties: {background: '', font_size: 10, italic: true, text: 'This is a project done as a part of Optimization class at University of Texas at Austin '}
+    type: TextBox
   layout_properties: {slot: default}
   name: outlined_card_1
   properties: {background: 'theme:On Background', col_spacing: none, col_widths: '{"HKLICV":30,"FEPTLG":2,"PDJQEC":28}', role: null, spacing_above: none, spacing_below: none}
