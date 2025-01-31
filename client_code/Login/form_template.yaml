@@ -85,7 +85,7 @@ components:
   type: ColumnPanel
 - layout_properties: {slot: title}
   name: label_2
-  properties: {font_size: 30, text: 'CONNECT 4                                                                                                                                                        '}
+  properties: {background: 'theme:On Secondary Container', font_size: 30, foreground: 'theme:Surface Variant', text: 'CONNECT 4                                                                                                                                                        '}
   type: Label
 container:
   properties: {background: 'theme:On Surface', foreground: 'theme:On Secondary Container', html: '@theme:standard-page.html', visible: true}
