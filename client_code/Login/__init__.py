@@ -2,7 +2,6 @@ from ._anvil_designer import LoginTemplate
 from anvil import *
 import anvil.server
 
-
 class Login(LoginTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
