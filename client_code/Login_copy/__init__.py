@@ -1,4 +1,4 @@
-from ._anvil_designer import BlogTemplate
+from ._anvil_designer import Login_copyTemplate
 from anvil import *
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -6,10 +6,11 @@ from anvil.tables import app_tables
 import anvil.users
 import anvil.server
 from anvil import open_form
-def initiate_login(self):
-    anvil.users.login_with_form()
 
-class Blog(BlogTemplate):
+anvil.users.login_with_form()
+
+
+class Login_copy(Login_copyTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -24,11 +25,10 @@ class Blog(BlogTemplate):
     # pass in name, email and feedback as arguments
     anvil.server.call("send_feedback", mail, pwd)
 
+  def button_1_click(self, **event_args):
+    """Navigate to Form2 when button is clicked"""
+    open_form("Blog")
+
   def home_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('Login')
-
-  def blog_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('Blog')
-
+    open_form("Login")
