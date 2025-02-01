@@ -1,0 +1,34 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'GNLHIR,CZOAIP'}
+    name: label_1
+    properties: {text: Blog Post}
+    type: Label
+  - layout_properties: {grid_position: 'QIXYQE,ZMQJHX'}
+    name: label_1_copy_copy
+    properties: {text: Play Connect4}
+    type: Label
+  - layout_properties: {grid_position: 'JABIPU,YSDMLF'}
+    name: label_1_copy
+    properties: {text: Contact us!}
+    type: Label
+  layout_properties: {slot: left-nav}
+  name: blog_container
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: title}
+  name: label_2
+  properties:
+    background: theme:On Secondary Container
+    font_size: 30
+    foreground: theme:Surface Variant
+    spacing:
+      margin: [0, 0, null, null]
+      padding: [15, null, 15, null]
+    text: 'CONNECT 4                                                                                                                                                                                                                                                                                                                                                                                              '
+    visible: true
+  type: Label
+container:
+  properties: {background: 'theme:On Surface', foreground: 'theme:On Secondary Container', html: '@theme:standard-page.html', visible: true}
+  type: HtmlTemplate
+is_package: true

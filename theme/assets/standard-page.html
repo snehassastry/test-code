@@ -1,4 +1,64 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">
+<style>
+  /* Hamburger icon customization */
+  .sidebar-toggle i.fa-bars {
+    color: #ffffff;
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+
+  .sidebar-toggle:hover i.fa-bars {
+    color: #04AA6D;
+    transform: scale(1.1);
+  }
+
+  /* Active state for sidebar toggle */
+  .sidebar-toggle.active i.fa-bars {
+    color: #04AA6D;
+    transform: rotate(90deg);
+  }
+
+  /* Nav shield styling */
+  .nav-shield {
+    background: rgba(37,150,190,0);
+    transition: opacity 0.3s ease;
+  }
+
+  /* App bar positioning */
+  .app-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #1a1a1a;
+  }
+
+  .sidebar-toggle {
+    position: relative;
+    padding: 20px;
+    z-index: 1001;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .sidebar-toggle {
+      padding: 15px !important;
+    }
+    
+    .sidebar-toggle i.fa-bars {
+      font-size: 20px;
+    }
+  }
+  body {
+      background-color: #000000 !important;
+      min-height: 100vh;
+      margin: 0;
+  }
+  
+  html {
+      height: 100%;
+  }
+
+</style>
 
 <div class="structure">
   <div class="app-bar" anvil-drop-container=".anvil-container" anvil-drop-redirect=".placeholder">
