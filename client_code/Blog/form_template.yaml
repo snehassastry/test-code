@@ -9,11 +9,6 @@ components:
     name: play
     properties: {text: Play Connect4}
     type: Button
-  - event_bindings: {click: contact_click}
-    layout_properties: {grid_position: 'JABIPU,HMCPNQ'}
-    name: contact
-    properties: {text: Contact us!}
-    type: Button
   - event_bindings: {click: home_click}
     layout_properties: {grid_position: 'TURBUT,FDKXTX'}
     name: home
